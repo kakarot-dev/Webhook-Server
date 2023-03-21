@@ -42,6 +42,6 @@ Run the server using the following
 </a>
 
 ### Railway
-<a href="https://railway.app/template/MkFD9h">
+<a href="https://railway.app/template/wZBSMc?referralCode=ca8amY">
   <img src="https://railway.app/button.svg" alt="Deploy">
 </a>

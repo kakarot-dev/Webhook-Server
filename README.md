@@ -19,7 +19,7 @@ Simple Fastify Server for logging our Vote Webhooks
 
 > NOTE: If you are using `railway`, or `heroku` for hosting the port should be set to `process.env.PORT` to allow them to dynamically assign ports. You should set this on line 38 of the `src/sever/index.js` file!  
 
-**NOTE:** Webhook Secret can be set in the settings/edit section for your bot on our website (shown below)
+**NOTE:** Webhook Secret should also be set in the settings/edit section for your bot on our website (shown below)
 
 ![Imgur](https://i.imgur.com/QBHiQVC.png)
 

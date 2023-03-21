@@ -1,5 +1,6 @@
 const { Client, Intents } = require("discord.js");
 const config = require("../../config");
+const evt = require("./events");
 
 const client = new Client({ 
     shards: 'auto',
@@ -19,6 +20,8 @@ const client = new Client({
 
 module.exports = client;
 
-client.config = require("../../config");
+client.config = config;
+
+evt(client);
 
 client.login(config.bot_token);

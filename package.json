@@ -1,12 +1,7 @@
 {
     "name": "@infinitybots/webhook-sample",
     "description": "Simple Fastify Server for logging our Vote Webhooks",
-    "engineStrict": true,
     "version": "0.0.1",
-
-    "engines": {
-        "node": "16.x"
-    },
 
     "scripts": {
         "start": "node src/client/index.js",

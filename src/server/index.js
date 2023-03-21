@@ -35,7 +35,7 @@ module.exports = async (client) => {
         try {
 
             await fastify.listen({
-                port: config.port,
+                port: process.env.PORT || config.port,
                 host: '0.0.0.0'
             });
 

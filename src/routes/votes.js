@@ -38,7 +38,7 @@ module.exports = async (fastify, opts) => {
       
       let client = req.client;
 
-      let ember = new MessageEmbed()
+      let embed = new MessageEmbed()
        .setTitle(`Vote Logs`)
        .setColor('RANDOM')
        .setDescription(`Woah someone has voted for me on Infinity Bot List`)

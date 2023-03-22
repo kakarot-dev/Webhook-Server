@@ -64,7 +64,7 @@ module.exports = async (fastify, opts) => {
           text: "Infinity Vote Logger",
           iconURL: `${vote.userObj.avatar}`,
         });
-      
+
       await res.status(204).send("Success");
 
       return client.guilds.cache

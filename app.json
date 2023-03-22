@@ -1,20 +1,7 @@
 {
-    "name": "IBL - Example Webhook Server",
-    "description": "Simple Fastify Server for logging our Vote Webhooks",
-    "keywords": [
-      "Heroku",
-      "Webhook",
-      "Server",
-      "Fastify",
-      "Infinity Bots"
-    ],
-    "website": "https://infinitybots.gg",
-    "repository": "https://github.com/InfinityBotList/Webhook-Server",
-    "logo": "https://infinitybots.gg/_next/image?url=%2Fimg%2Flogo.webp&w=64&q=75",
-
-    "buildpacks": [
-      {
-          "url": "heroku/nodejs"
-      }
-    ]
-  }
+  "name": "IBL Example Webhook Server",
+  "description": "Simple Fastify Server for logging our Vote Webhooks",
+  "repository": "hhttps://github.com/InfinityBotList/Webhook-Server",
+  "logo": "https://infinitybots.gg/_next/image?url=%2Fimg%2Flogo.webp&w=64&q=75",
+  "keywords": ["Heroku", "Webhook", "Server", "Fastify", "Infinity Bots"]
+}

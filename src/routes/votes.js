@@ -64,13 +64,13 @@ module.exports = async (fastify, opts) => {
           text: "Infinity Vote Logger",
           iconURL: `${vote.userObj.avatar}`,
         });
+      
+      await res.status(204).send("Success");
 
-      await client.guilds.cache
+      return client.guilds.cache
         .get(config.guildID)
         .channels.cache.get(config.voteLogs)
         .send({ embeds: [embed] });
-
-      return res.status(204).send("Success");
     })
   );
 };

@@ -37,7 +37,7 @@ Run the server using the following
 ## Deployment
 
 ### Heroku
-<a href="https://heroku.com/deploy/?template=https://github.com/InfinityBotList/Webhook-Server">
+<a href="https://heroku.com/deploy?template=https://github.com/InfinityBotList/Webhook-Server/tree/master">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 

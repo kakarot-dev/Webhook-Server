@@ -6,6 +6,15 @@ const moment = require("moment");
 const webhook = new Reedhook(config.hook_secret);
 
 module.exports = async (fastify, opts) => {
+  fastify.get("/", (request, reply) => {
+    reply.status(200).send({
+      message: "Hello!",
+      version: "0.0.1",
+      error: false,
+      fatal: false,
+      status: 200,
+    });
+  });
   fastify.post(
     "/votes",
     webhook.hookListener(async (voteData, req, res) => {

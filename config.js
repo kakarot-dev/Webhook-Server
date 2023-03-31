@@ -8,10 +8,10 @@
  */
 
 module.exports = {
-    hook_secret: "MigiziBot_123",
-    bot_token: "OTk3MzkwOTQzMDk3NDU0Njg0.G7u8Mu.vjHKPqWdeybjbupNgCXdvh_KB7-Wy2grv2GiCE",
-    domain: "https://ibl-test-server.herokuapp.com/",
-    guildID: "998713528624087090",
-    voteLogs: "998714340326781049",
-    port: process.env.PORT
-}
+  hook_secret: "",
+  bot_token: "",
+  domain: "",
+  guildID: "",
+  voteLogs: "",
+  port: 4223,
+};

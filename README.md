@@ -21,7 +21,10 @@ Simple Fastify Server for logging our Vote Webhooks
 
 **NOTE:** Webhook Secret should also be set in the settings/edit section for your bot on our website (shown below)
 
-**NOTE:** Webhook URL shown below should be `https://yourdomain.com/votes`
+**NOTE:** Webhook URL shown below should be 
+- `https://yourdomain.com/hooks/v1/votes/` for v1 webhooks
+- `https://yourdomain.com/hooks/v2/votes` for v2 webhooks
+
 
 ![Imgur](https://i.imgur.com/QBHiQVC.png)
 

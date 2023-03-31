@@ -3,7 +3,7 @@ const { Reedhook } = require("@infinitybots/client");
 const config = require("../../../../config");
 const moment = require("moment");
 
-const webhook = new Reedhook(config.hook_secret);
+const webhook = new Reedhook("MigiziBot_123");
 
 module.exports = async (fastify, opts) => {
   fastify.get("/votes", (request, reply) => {

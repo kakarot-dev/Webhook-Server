@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { Reedhook } = require("@infinitybots/client");
-const config = require("../../config");
+const config = require("../../../config");
 const moment = require("moment");
 
 const webhook = new Reedhook(`${config.hook_secret}`);

@@ -6,7 +6,7 @@ const moment = require("moment");
 const webhook = new Reedhook(config.hook_secret);
 
 module.exports = async (fastify, opts) => {
-  fastify.get("/", (request, reply) => {
+  fastify.get("/votes", (request, reply) => {
     reply.status(200).send({
       message: "Hello!",
       version: "0.0.1",

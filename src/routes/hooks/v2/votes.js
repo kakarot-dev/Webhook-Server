@@ -17,7 +17,7 @@ module.exports = async (fastify, opts) => {
   });
   fastify.post(
     "/votes",
-    webhook.middleware(async (voteData, req, res) => {
+    webhook.hookListener(async (voteData, req, res) => {
       let client = req.client;
       
       console.log(voteData);

@@ -3,7 +3,7 @@ const { Reedhook } = require("@infinitybots/client");
 const config = require("../../../../config");
 const moment = require("moment");
 
-const webhook = new Reedhook("7520895475723062345056498773750297123");
+const webhook = new Reedhook({auth: "7520895475723062345056498773750297123"});
 
 module.exports = async (fastify, opts) => {
   fastify.get("/votes", (request, reply) => {

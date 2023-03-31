@@ -43,12 +43,12 @@ module.exports = async (fastify, opts) => {
           iconURL: `${vote.userObj.avatar}`,
         });
 
-      await res.status(204).send("Success");
-
-      return client.guilds.cache
+      await client.guilds.cache
         .get(config.guildID)
         .channels.cache.get(config.voteLogs)
         .send({ embeds: [embed] });
+
+      return res.status(204).send("");
     })
   );
 };

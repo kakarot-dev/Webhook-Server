@@ -14,7 +14,7 @@ Simple Fastify Server for logging our Vote Webhooks
 | `bot_token`      | Discord Client Token               | `Found in the Discord Dev Portal`       |
 | `domain`         | The domain for the Server          | `https://votes.infinitybots.gg`         |
 | `guildID`        | Discord Server ID for Logs         | `758641373074423808`                    |
-| `voteLogs`       | Channel ID in the Server Above     | `https://votes.infinitybots.gg`         |
+| `voteLogs`       | Channel ID in the Server Above     | `998714340326781049`         |
 | `port`           | The port the Server will run on    | `4223`                                  |
 
 > NOTE: If you are using `railway`, or `heroku` for hosting the port should be set to `process.env.PORT` to allow them to dynamically assign ports. You should set this on line 38 of the `src/sever/index.js` file!  

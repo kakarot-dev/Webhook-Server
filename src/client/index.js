@@ -1,7 +1,7 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const { Client, Intents } = require("discord.js");
-const config = require("../../config");
 const evt = require("./events");
-
 const client = new Client({
   shards: "auto",
   intents: [
@@ -20,8 +20,6 @@ const client = new Client({
 
 module.exports = client;
 
-client.config = config;
-
 evt(client);
 
-client.login(config.bot_token);
+client.login(process.env.BOT_TOKEN);

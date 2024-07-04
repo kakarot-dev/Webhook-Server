@@ -1,9 +1,8 @@
 const { MessageEmbed } = require("discord.js");
 const { Reedhook } = require("@infinitybots/client");
-const config = require("../../../../config");
 const moment = require("moment");
 
-const webhook = new Reedhook(config.hook_secret);
+const webhook = new Reedhook(process.env.HOOK_SECRET);
 
 /**
  * FOR AVAILABLE VOTE DATA SEE
@@ -46,8 +45,8 @@ module.exports = async (fastify, opts) => {
         });
 
       await client.guilds.cache
-        .get(config.guildID)
-        .channels.cache.get(config.voteLogs)
+        .get(process.env.GUILD_ID)
+        .channels.cache.get(process.env.VOTE_LOGS)
         .send({ embeds: [embed] });
 
       return res.status(204).send("");
